@@ -1,10 +1,11 @@
 var express = require('express');
 var bodyParser = require('body-parser');
-var port = process.env.PORT || 3000
+var port = process.env.PORT || 3000;
 var app = express();
 
-app.set('view engine', 'ejs');
+var fourthGrade = {'grade':'4', 'students':{'number':'10', 'names':['DG', 'Dan', 'Alyssa']}};
 
+app.set('view engine', 'ejs');
 
 
 //Login Page
@@ -23,7 +24,14 @@ app.get('/home', function(req,res){
 
 //Group Page (Where groups within grades will be displayed)
 app.get('/groups', function(req, res){
-	res.render("groups");
+	console.log(req.query);
+	if(req.query.grade == 4){
+		res.render('groups', {fourthGrade:fourthGrade});
+		console.log('made it');
+	} else{
+		res.render("groups");
+		console.log('Didnt made it');
+	}
 });
 
 

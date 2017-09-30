@@ -36,7 +36,7 @@ body {
   padding:0;
   margin:0;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  text-align:center;;
+  text-align:center;
   font-size:30px;
   background-color:#34E989;
   opacity:.9;
@@ -74,3 +74,42 @@ body {
   background-size:100px 100px;
   
 }
+
+#line {
+  height:5px;
+  background:DodgerBlue;
+  width:800px;
+  margin:auto;
+  margin-top:30px;
+}
+
+.circleNumber {
+  display:inline-block;
+  margin:auto;
+  margin-right:30px;
+  margin-top:5px;
+  height:40px;
+  width:40px;
+  background-color:DodgerBlue;
+  border-radius:20px;
+}
+
+.circleWriting {
+  padding:0;
+  margin:0;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  text-align:center;
+  line-height:40px;
+}
+
+#tableWithCircles {
+  width:800px;
+  margin:auto;
+  text-align:center;
+}
+
+
+
+
+
+

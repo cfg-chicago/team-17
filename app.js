@@ -3,7 +3,12 @@ var bodyParser = require('body-parser');
 var port = process.env.PORT || 3000;
 var app = express();
 
-var fourthGrade = {'grade':'4', 'students':{'number':'10', 'names':['DG', 'Dan', 'Alyssa']}};
+//var fourthGrade = {'grade':'4', 'students':{'number':'10', 'names':['DG', 'Dan', 'Alyssa']}};
+
+var data1 = {'groups':['Group 1', 'Group 2', 'Group 3']};
+var data2 = {'students':['Dan', 'Tyler', 'Alyssa']};
+
+
 
 app.set('view engine', 'ejs');
 
@@ -26,7 +31,7 @@ app.get('/home', function(req,res){
 app.get('/groups', function(req, res){
 	console.log(req.query);
 	if(req.query.grade == 4){
-		res.render('groups', {fourthGrade:fourthGrade});
+		res.render('groups', {data1:data1, data2:data2});
 		console.log('made it');
 	} else{
 		res.render("groups");

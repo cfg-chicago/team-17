@@ -44,6 +44,18 @@ body {
   color:#0C1B57;
 }
 
+#reportText {
+  padding:0;
+  margin:0;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  text-align:center;
+  font-size:20px;
+  background-color:#34E989;
+  opacity:.9;
+  border-radius:10px;
+  color:#0C1B57;
+}
+
 #name {
   background-color:#34E989;
   opacity:.9;
@@ -51,6 +63,19 @@ body {
   margin:auto;
   margin-top:20px;
   border-radius:20px;  
+}
+
+#generateReport {
+  background-color:#34E989;
+  opacity:.9;
+  right:0;
+  top:0;
+  z-index:2;
+  margin-top:60px;
+  margin-right:5px;
+  width:200px;
+  border-radius:20px; 
+  position:fixed;
 }
 
 .postEntry {

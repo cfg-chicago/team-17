@@ -1,0 +1,73 @@
+body,html {
+  margin:0;
+  padding:0;
+}
+
+body {
+  background:url(
+    "http://www.wffpitchin.org/wp-content/uploads/2017/02/logo-1.png");
+  background-color:AliceBlue;
+  background-attachment:fixed;
+}
+
+#profilePic {
+  margin:auto;
+  margin:0;
+  height:250px;
+  width:250px;
+  background-color:#34E989;
+  border-radius:150px;
+  background-image:url("http://www.qygjxz.com/data/out/190/5691490-profile-pictures.png");
+  background-position:center;
+  background-repeat:no-repeat;
+}
+
+#nameText {
+  padding:0;
+  margin:0;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  text-align:center;
+  font-size:20px;
+  background-color:#3F4045;
+  opacity:.9;
+  color:white;
+}
+
+#groupText {
+  padding:0;
+  margin:0;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  text-align:center;
+  font-size:20px;
+  background-color:#3F4045;
+  opacity:.9;
+  color:white;
+  width:300px;
+  border-radius:10px;
+  margin:auto;
+  margin-top:20px;
+  margin-bottom:30px;
+  line-height:60px;
+
+}
+
+.spacer {
+  height:50px;
+  width:3px;
+}
+
+#groupName {
+  height:80px;
+  width:50px;
+  margin:auto;
+
+}
+
+td {
+  text-align:center;
+  margin:0;
+}
+
+#group {
+  margin:0px auto;
+}

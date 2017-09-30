@@ -3,43 +3,36 @@ var bodyParser = require('body-parser');
 var port = process.env.PORT || 3000;
 var app = express();
 
-// <<<<<<< HEAD
-// app.set('view engine', 'ejs');
-//
-// app.use(bodyParser.json());s
-//
-//
-// // Connection URL
-//
-// =======
-
 var MongoClient = require('mongodb').MongoClient, assert = require('assert');
 //Database Setup
-var url = 'mongodb://localhost:27017';
-var db;
+var mongo = {};
+var url = 'mongodb://localhost:27017/test';
+
 // Use connect method to connect to the Server
 MongoClient.connect(url, function(err, db) {
   assert.equal(null, err);
+  mongo = db.collection("classmates");
+ // mongo.s.db.collection.find();
+  console.log(mongo);
   console.log("Connected correctly to server");
-	db = db;
- // db.close();
+	datab = db;
+  db.close();
 });
 
 //Schema Setup
-var groupSchema = new mongoose.Schema({
-	grade: Number,
-	names: Array,
-	teams: Array
-});
+// var groupSchema = new mongoose.Schema({
+// 	grade: Number,
+// 	names: Array,
+// 	teams: Array
+// });
 
 
 //Compile into a model
-var Group = mongoose.model("Group", groupSchema);
 
 
 //CREATE DATABASE
 /**********************************************************************************/
-Group.create(
+var classmates =
 	{
 		fourth:
 			{
@@ -126,15 +119,7 @@ Group.create(
 
 
 
-	}, function(err, group){
-		if(err){
-			console.log('SOMETHING WENT WRONG');
-		} else {
-			console.log('NEWLY CREATED GROUP:');
-			console.log(group);
-			console.log();
-		}
-	});
+	};
 
 /**********************************************************************************/
 
@@ -145,50 +130,15 @@ app.set('view engine', 'ejs');
 
 //Login Page
 app.get('/', function(req,res){
-
+//	console.log(datab).collection;
 	//Change to login if implemented
 	res.render("home");
 });
 
-
-//Home Page (Where all Grades will be displayed)
-app.get('/home', function(req,res) {
-	db.collection('classmates', function(err, collection) {
-		console.log("found collection");
-	    collection.find().toArray(function(err, items) {
-		console.log(items);
-		res.send(items);
-	    });
-	});
-});
-
-
 //Group Page (Where groups within grades will be displayed)
-app.get('/groups', function(req, res){
-	console.log(req.query);
-	if(req.query.grade == 4){
-
-		//Store Database data in a variable
-		Group.find({}, function(err, groups){
-		if(err){
-			console.log(err);
-		} else {
-
-			res.render('groups', {groups:groups});
-			console.log('made it');
-		}
-
-
-
-		});
-
-
-
-
-	} else{
-		res.render("groups");
-		console.log('Didnt made it');
-	}
+app.get('/groups', function(req, res) {
+	res.render("groups");
+	//console.log(req.query);
 });
 
 

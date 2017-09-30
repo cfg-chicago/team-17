@@ -1,0 +1,48 @@
+body, html {
+  margin:0;
+  padding:0;
+}
+
+body {
+background:url("http://www.wffpitchin.org/wp-content/uploads/2017/02/logo-1.png");
+}
+
+#newPost {
+  width:400px;
+  height:100px;
+  background-color:#3E3730;
+  margin:auto;
+  margin-top:20px;
+  border-radius:5px;
+}
+
+#newPostFont {
+  line-height:100px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size:40px;
+  text-align:center;
+  color:white;   
+}
+
+#imgCont {
+  
+  background-color:#5ddd85;
+  height:300px;
+  width:400px;
+  margin:auto;
+  margin-top:20px;
+  text-align:center;
+  border-radius:5px;
+}
+
+#formCont {
+  width:400px;
+  height:100px;
+  margin:auto;
+  margin-top:10px;
+  background-color:#5ddd85;
+}
+
+#form1 {
+margin-top:10px;
+}

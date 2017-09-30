@@ -1,18 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+  <link rel="stylesheet" type="text/css" href="https://rawgit.com/cfg-chicago/team-17/master/views/timeline.css">
+  <title>Pitch In</title>
 </head>
 <body>
-
-<div id="topContainer">
-<svg id="mySVG">
-  <path fill="none" stroke="aqua" stroke-width="10" id="triangle" d="M150 0 L750 0" />
-  Sorry, your browser does not support inline SVG.
-</svg>
-  </div id="topContainer">
-
-<script>
+  
+  <div id="timeline">
+    <div id="line">
+      <svg id="mySVG">
+        <path fill="none" stroke="#34E989" stroke-width="10" id="triangle" d="M50 0 L850 0" />
+          Sorry, your browser does not support inline SVG.
+      </svg>
+    </div>
+    <table id="tableWithCircles" style="width:">    
+      <tr>
+        <td><a href="#post1"><div class="circleNumber"><p class="circleWriting">4</p></div></a></td>
+        <td><a href="#post2"><div class="circleNumber"><p class="circleWriting">5</p></div></a></td>
+        <td><a href="#post3"><div class="circleNumber"><p class="circleWriting">6</p></div></a></td>
+        <td><a href="#post4"><div class="circleNumber"><p class="circleWriting">7</p></div></a></td>
+        <td><a href="#post5"><div class="circleNumber"><p class="circleWriting">8</p></div></a></td>
+      </tr>
+    </table>
+     
+  </div>
+  <button id="generateReport" onclick="generateReport()"><p id="reportText">Generate Report</p></button></div>
+  <div id="profilePic"></div>
+  <div id="name"><p id="nameText">Firstname Lastname</p></div>
+  <div class="postEntry">
+ 
+  </div>
+  
+  <script>
 // Get the id of the <path> element and the length of <path>
 var triangle = document.getElementById("triangle");
 var length = triangle.getTotalLength();
@@ -34,7 +53,12 @@ var scrollpercent = (document.body.scrollTop + document.documentElement.scrollTo
   // Reverse the drawing (when scrolling upwards)
   triangle.style.strokeDashoffset = length - draw;
 }
+
 </script>
+  
+
+  
+   
 
 </body>
 </html>

@@ -64,17 +64,6 @@ body {
   border:1px solid #34E989;
 }
 
-.star {  
-  height:100px;
-  width:100px;
-  margin:auto;
-  margin-top:10px;
-  background-image:url("http://www.clker.com/cliparts/V/2/j/s/r/a/star-outline-md.png");
-  background-position:center;
-  background-size:100px 100px;
-  
-}
-
 #line {
   height:5px;
   background:DodgerBlue;
@@ -116,9 +105,6 @@ body {
   height: 5px;
   margin-left:-50px;
 }
-
-
-
 
 
 

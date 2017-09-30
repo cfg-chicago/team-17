@@ -1,0 +1,30 @@
+#topContainer {
+   background-color:black;
+   height:100px;
+   width:900px;
+   position:fixed;
+   border-radius:10px;
+   margin
+   align:center;
+
+  
+}
+
+body {
+  height: 2000px;
+  background: #f1f1f1;
+  padding:0;
+}
+
+#mySVG {
+  position: fixed;
+  top: 10%;
+  width: 800px;
+  height: 10px;
+  margin-left:50px;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+}

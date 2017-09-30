@@ -15,26 +15,33 @@
     </div>
     <table id="tableWithCircles" style="width:">
       <tr>
-        <td><a href="#post1"><div class="circleNumber"><p class="circleWriting">4</p></div></a></td>
-        <td><a href="#post2"><div class="circleNumber"><p class="circleWriting">5</p></div></a></td>
-        <td><a href="#post3"><div class="circleNumber"><p class="circleWriting">6</p></div></a></td>
-        <td><a href="#post4"><div class="circleNumber"><p class="circleWriting">7</p></div></a></td>
-        <td><a href="#post5"><div class="circleNumber"><p class="circleWriting">8</p></div></a></td>
+        <td><a href="#first"><div class="circleNumber"><p class="circleWriting">4</p></div></a></td>
+        <td><a href="#second"><div class="circleNumber"><p class="circleWriting">5</p></div></a></td>
+        <td><a href="#third"><div class="circleNumber"><p class="circleWriting">6</p></div></a></td>
+        <td><a href="#fourth"><div class="circleNumber"><p class="circleWriting">7</p></div></a></td>
+        <td><a href="#fifth"><div class="circleNumber"><p class="circleWriting">8</p></div></a></td>
       </tr>
     </table>
 
   </div>
-  <button id="generateReport" onclick="generateReport()"><p id="reportText">Generate Report</p></button></div>
   <div id="profilePic"></div>
   <div id="name"><p id="nameText">Firstname Lastname</p></div>
-  <div class="postEntry">
+  <form action="newPost" style="text-align:center">
+    <input type="submit" value="New Post" />
+</form>
+  <button id="generateReport" href="newPost"><p id="reportText">New Post</p></button></div>
+
+  <div id="first" class="postEntry">
 
   </div>
-  <div class="postEntry">
+  <div id="second" class="postEntry">
 
-  </div><div class="postEntry">
+  </div><div id="third" class="postEntry">
 
-  </div><div class="postEntry">
+  </div><div id = "fourth" class="postEntry">
+
+  </div>
+  <div id="fifth" class="postEntry">
 
   </div>
 

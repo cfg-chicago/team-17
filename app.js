@@ -141,6 +141,10 @@ app.get('/groups', function(req, res) {
 	//console.log(req.query);
 });
 
+app.get('/newPost', function(req, res) {
+	res.render("newPost");
+	//console.log(req.query);
+});
 
 //Profile Page for each
 app.get('/timeline', function(req, res){

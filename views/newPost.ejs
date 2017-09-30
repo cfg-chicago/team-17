@@ -1,50 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Cover Page</title>
+
+  <link rel="stylesheet" type="text/css" href="https://rawgit.com/michaelgrotton/cssStuff/master/newPost.css">
+  <title>Pitch It</title>
 </head>
-<body bgcolor = "DodgerBlue">
+<body>
 
-  <img src="star.jpg" alt="some_text" style="width:100;height:25;">
-  <div align = "center">
-  <h1>New Post!</h1>
+  <div id="newPost"><p id=newPostFont>New Post!</p></div>
 
-    <form id = "form1" action = "/newPost" method = "POST">
-      
-      Please enter new post title:
-      <input name = "title" type = "text">
-      </br>
-    </br>
-
-    </br>
-    </br>
-      Please enter your description:
-      <input name = "description" type = "text" >
-    </form>
-
-    <button onclick= "outputname()">Submit</button>
-
- <script>
-
-   function outputname(){
-   var desc, y, title;
-
-
-   y = document.getElementById("form1");
-
-   title = y.elements["title"].value;
-
-   desc = y.elements["description"].value;
-   document.write("<div height = \"300\" width = \"300\" align = \"center\">");
-   document.write('<h2 style = \"font-size:35\">'+title+'</h2>');
-   document.write("<p style = \"font-size:20\">" + desc + "</p>");
-   document.write("</div>");
-   }
-
-
-
-  </script>
+  <div id="imgCont">
+  <input type='file' onchange="readURL(this);" />
+    <img id="blah" src="#" alt="your image" />
   </div>
+
+
+  <div id="formCont">
+  <form id = "form1">
+    Please give your description!
+    <input name = "description" type = "text" >
+  </form>
+  </div>
+
 </body>
 
 </html>
